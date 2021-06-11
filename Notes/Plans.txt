@@ -1,0 +1,6 @@
+Algorithms to learn:
+
+1. Reverse a linked list
+2. Do a BFS and an LFS on a Graph
+3. 
+
