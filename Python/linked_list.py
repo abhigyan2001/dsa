@@ -120,9 +120,16 @@ class LinkedList:
     def __repr__(self):
         sb = "["
         for trav in self:
-            sb+=str(trav)
+            if type(trav) == str:
+                sb+=f'"{trav}"'
+            else:
+                sb+=str(trav)
             if trav is not None:
                 sb+=","
         sb+="]"
         return str(sb)
-
+    def __getitem__(self,index):
+        trav = self.head
+        for i in range(index+1):
+            trav = trav.next
+        return trav.data
