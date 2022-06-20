@@ -1,3 +1,3 @@
-# Data Structures and Algorithms
+# Practising LeetCode & GeeksForGeeks for DSA Interviews
 
-Learning Data Structures and Algorithms in Java, C++ and Python
+Practising Data Structures and Algorithms in C++ and a bit of Python - on LeetCode and GeeksForGeeks
