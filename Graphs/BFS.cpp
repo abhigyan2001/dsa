@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 class Solution {
-public:
+    public:
     vector<int> bfsOfGraph(int V, vector<int> adj[]) {
         queue<int> q;
         vector<bool> visited(V,false);

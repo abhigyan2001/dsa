@@ -11,7 +11,7 @@ using namespace std;
  * };
  */
 class Solution {
-public:
+    public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
         Solution 1: Using 2 passes
         ListNode* curr = head;
