@@ -1,10 +1,11 @@
-#include<bits/stdc++.h>
+#include<vector>
+#define ll long long
 using namespace std;
 
 class Solution {
   public:
-    long long int countBT(int h) { 
-        long long int count[h+1];
+    long long countBT(int h) { 
+        vector<ll> count(h+1);
         int mod = 1000000007;
         count[0] = 1;
         count[1] = 1;

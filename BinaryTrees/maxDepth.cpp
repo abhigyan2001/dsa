@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include<queue>
 using namespace std;
 
 //Definition for a binary tree node.
@@ -16,8 +16,8 @@ public:
     // Recursive Solution:
     int maxDepthRecur(TreeNode* root) {
         if(root==nullptr) return 0;
-        int l = maxDepth(root->left);
-        int r = maxDepth(root->right);
+        int l = maxDepthRecur(root->left);
+        int r = maxDepthRecur(root->right);
         if(l>r) return l+1;
         else    return r+1;
     }

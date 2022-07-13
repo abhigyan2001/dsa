@@ -1,10 +1,9 @@
-#include <bits/stdc++.h>
 using namespace std;
 
 struct Node {
     int data;
     Node *next;
-    Node(int x) : data(x), next(NULL) {}
+    Node(int x) : data(x), next(nullptr) {}
 };
 
 long long multiplyTwoLists (Node* l1, Node* l2)

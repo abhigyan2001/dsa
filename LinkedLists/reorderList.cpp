@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<stack>
 using namespace std;
 
 // Definition for singly-linked list.

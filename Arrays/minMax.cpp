@@ -1,7 +1,9 @@
-#include <bits/stdc++.h>
+#include<vector>
+#include<utility>
+#include<iostream>
 using namespace std;
 #define ll long long
-pair<long long, long long> getMinMax(long long a[], int n);
+pair<long long, long long> getMinMax(vector<ll> a, int n);
 
 int main(){
 	int t;
@@ -9,7 +11,7 @@ int main(){
 	while(t--){
 		int n;
 		cin >> n;
-		ll a[n];
+		vector<ll> a(n);
 		for(int i = 0; i < n; i++){
 			cin >> a[i];
 		}
@@ -19,8 +21,8 @@ int main(){
 	return 0;
 }
 
-pair<long long, long long> getMinMax(long long a[], int n) {
-	long long max=a[n-1], min=a[n-1];
+pair<long long, long long> getMinMax(vector<ll> a, int n) {
+	ll max=a[n-1], min=a[n-1];
 	for(int i=0; i<n; i++){
 		if(max<a[i]){
 			max=a[i];

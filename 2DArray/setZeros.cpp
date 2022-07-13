@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include<vector>
+#include<iostream>
 using namespace std;
 class Solution {
 public:
@@ -14,7 +15,7 @@ public:
         }
         for(int p=0; p<pos.size(); p++){
             int x = pos[p][0], y=pos[p][1];
-            cout << x << " " << y << endl;
+            //cout << x << " " << y << endl;
             for(int i=0; i<n; i++){
                 for(int j=0; j<m; j++){
                     if(i==x || j==y) matrix[i][j]=0; 

@@ -1,14 +1,14 @@
 // Driver Code
-#include<bits/stdc++.h>
-#define ll long long int
+#include<iostream>
+#include<vector>
+#define ll long long
 using namespace std;
 
  // } Driver Code Ends
 // Complete this function
-long long int count(long long int n)
-{
-	long long int table[n+1],i;
-	memset(table, 0, sizeof(table));
+ll count(ll n){
+	vector<ll> table(n+1,0);
+	ll i;
 	table[0]=1;                 // If 0 sum is required number of ways is 1.
 	for(i=3; i<=n; i++){
 	    table[i]+=table[i-3];

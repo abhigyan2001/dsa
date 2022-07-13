@@ -1,11 +1,13 @@
-#include <bits/stdc++.h>
+#include<vector>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
 // User function Template for C++
 
 class Solution{
 public:
-    int knapSack(int N, int W, int val[], int wt[])
+    int knapSack(int N, int W, vector<int> val, vector<int> wt)
     {
         // vector<vector<int>> memo(N+1,vector<int>(W+1,0));
         vector<int> memo(W+1,0);
@@ -35,7 +37,7 @@ int main(){
     while(t--){
         int N, W;
         cin>>N>>W;
-        int val[N], wt[N];
+        vector<int> val(N), wt(N);
         for(int i = 0;i < N;i++)
             cin>>val[i];
         for(int i = 0;i < N;i++)

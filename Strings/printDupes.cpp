@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include<string>
+#include<iostream>
+#include<unordered_map>
 using namespace std;
 class printDupes{
 	public:

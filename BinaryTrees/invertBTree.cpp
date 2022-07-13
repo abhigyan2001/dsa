@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include<queue>
 using namespace std;
 
 //Definition for a binary tree node.
@@ -31,14 +31,14 @@ public:
         }
         return root;
     }
-    public TreeNode invertTreeRecur(TreeNode root) {
+    TreeNode* invertTreeRecur(TreeNode* root) {
         if (root == nullptr) {
             return nullptr;
         }
 
-        TreeNode left = root.left, right = root.right;
-        root.left = invertTree(right);
-        root.right = invertTree(left);
+        TreeNode *left = root->left, *right = root->right;
+        root->left = invertTreeRecur(right);
+        root->right = invertTreeRecur(left);
         return root;
     }
 };
